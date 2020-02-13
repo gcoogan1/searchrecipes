@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab:700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
   min-height: 100vh;
+  margin-top: 30px;
+}
+
+
+
+.header{
+  text-align: center;
+  padding-top: 50px;
+  color: #ff4f87;
+  font-size: 3em;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  font-weight: bolder;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+
+.about{
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 30px;
+  color: #ff4f87;
+  font-size: 1em;
+  letter-spacing: 3px;
+  font-family: 'Roboto Slab', serif;
+  word-wrap: break-word;
+}
+
+.search-form{
+  min-height: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+  border: 1px solid #ff4f87;
+  border-radius: 5px;
+}
+
+.search-button{
+  cursor: pointer;
+  background: #ff4f87;
+  padding: 10px 40px;
+  margin-top: 0;
+  border: none;
   color: white;
+  margin-left: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.search-button:focus {
+  outline: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  flex-wrap: wrap;
+}
+
+input:focus {
+  outline: none; 
+}
+
+input::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .search-button{
+    font-size: 12px;
+    margin-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  .header {
+    font-size: 2.1em;
   }
 }
